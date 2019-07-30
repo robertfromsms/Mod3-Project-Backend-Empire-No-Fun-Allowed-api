@@ -1,7 +1,19 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# Officer creation section
+
+Personnel.create(name: "TT0707", email: "TT0707@empire.org", pic_url: "https://images.halloweencostumes.com/products/42516/1-1/mens-finn-fn-2187-stormtrooper-costume2.jpg", role: "officer", bio: "clone created 19 standard years ago.")
+Personnel.create(name: "Mundo Swift", email: "dontcontactme@empire.org", pic_url: "https://i.pinimg.com/originals/8f/f1/55/8ff15551837374c3b76a8c8943d9b66b.jpg", role: "officer", bio: "Former merc and informant.")
+Personnel.create(name: "Plasma Fury", email: "pfury@empire.org", pic_url: "https://i.pinimg.com/236x/56/a9/2e/56a92e109ce5b2ec0a358caeddf066ec--star-wars-empire-sith-empire.jpg", role: "officer", bio: "Female variant clone created 15 standard years ago.")
+Personnel.create(name: "Benten", email: "b10@empire.org", pic_url: "http://vignette1.wikia.nocookie.net/ben10/images/e/e4/Vilgax_Sword1.png", role: "officer", bio: "I was born in the wrong universe.")
+Personnel.create(name: "Doom Thu", email: "snake@empire.org", pic_url: "https://vignette.wikia.nocookie.net/villains/images/b/bc/Doom.v1.png", role: "officer", bio: "People say I sound like Darth Vader.")
+Personnel.create(name: "Literal Airplane", email: "757@empire.org", pic_url: "http://www.diecastairplane.com/shared/images/NewRay/IN-EZF117.jpg", role: "officer", bio: "I believe I can fly.")
+Personnel.create(name: "Birda Werd", email: "martymcfly@empire.org", pic_url: "https://rlv.zcache.com/funny_green_martian_alien_chicken_binder-r3eae8d39ade44dbc88b440b93013ad3e_xz8dx_8byvr_307.jpg", role: "officer", bio: "I came before the egg.")
+Personnel.create(name: "Rose the Bose", email: "ironfist@empire.org", pic_url: "https://i.ytimg.com/vi/HhbpxVOHWCM/maxresdefault.jpg", role: "officer", bio: "I am a cool mom.")
+Personnel.create(name: "Gamora Danger", email: "dangerous@empire.org", pic_url: "https://cnet3.cbsistatic.com/img/xwzE_ZxO54hqoX2Xmke4q1s7EXk=/2018/11/14/424a7378-fa4e-412c-9ef9-751e81e648fa/gamora.jpg", role: "officer", bio: "Damn Space Stone.")
+
+# Trooper creation section
+Personnel.create(name: "QW6789", email: "QW6789@empire.org", pic_url: "https://images.halloweencostumes.com/products/42516/1-1/mens-finn-fn-2187-stormtrooper-costume2.jpg", role: "trooper", bio: "clone created 4 standard years ago.")
+Personnel.create(name: "PO2525", email: "PO2525@empire.org", pic_url: "https://images.halloweencostumes.com/products/42516/1-1/mens-finn-fn-2187-stormtrooper-costume2.jpg", role: "trooper", bio: "clone created 1 standard years ago.")
+Personnel.create(name: "KI8734", email: "KI8734@empire.org", pic_url: "https://images.halloweencostumes.com/products/42516/1-1/mens-finn-fn-2187-stormtrooper-costume2.jpg", role: "trooper", bio: "clone created 6 standard years ago.")
+Personnel.create(name: "NM9482", email: "NM9482@empire.org", pic_url: "https://images.halloweencostumes.com/products/42516/1-1/mens-finn-fn-2187-stormtrooper-costume2.jpg", role: "trooper", bio: "clone created 7 standard years ago.")
+Personnel.create(name: "OO8888", email: "OO8888@empire.org", pic_url: "https://images.halloweencostumes.com/products/42516/1-1/mens-finn-fn-2187-stormtrooper-costume2.jpg", role: "trooper", bio: "clone created 2 standard years ago.")
+
