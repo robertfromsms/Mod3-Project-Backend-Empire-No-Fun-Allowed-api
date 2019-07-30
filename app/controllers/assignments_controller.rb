@@ -1,5 +1,11 @@
 class AssignmentsController < ApplicationController
 	def create
+		duty_trooper_ids = Duty.find_by(id: params[:duty_id]).troopers.map { |trooper| trooper.id }
+		if duty_trooper_ids.find_index(params[:personnel_id])
+			render json: {error: "This trooper has already been assigned to this duty."}
+			return
+		end
+
 		assignment = Assignment.new(personnel_id: params[:personnel_id], duty_id: params[:duty_id])
 		if assignment.save
 			render json: assignment.to_json

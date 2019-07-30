@@ -24,16 +24,17 @@ class PersonnelsController < ApplicationController
 	end
 
 	def index
-		troopers_with_less_than_3_duties = []
+		# troopers_with_less_than_3_duties = []
 		troopers = Personnel.where(role: "trooper")
 
-		troopers.each do |trooper|
-			if trooper.duties.length < 3
-				troopers_with_less_than_3_duties.push(trooper)
-			end
-		end
+		# troopers.each do |trooper|
+		# 	if trooper.duties.length < 3
+		# 		troopers_with_less_than_3_duties.push(trooper)
+		# 	end
+		# end
 
-		render json: troopers_with_less_than_3_duties.to_json
+		# render json: troopers_with_less_than_3_duties.to_json
+		render json: troopers.to_json
 	end
 
 	def create
