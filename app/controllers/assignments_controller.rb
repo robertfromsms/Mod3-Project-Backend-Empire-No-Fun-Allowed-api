@@ -15,7 +15,12 @@ class AssignmentsController < ApplicationController
 	end
 
 	def update
-		assignment = Assignment.find_by(id: params[:id])
+		if Assignment.find_by(id: params[:id]) do
+			assignment = Assignment.find_by(id: params[:id])
+		else
+			render json: {error: "No assignment with that ID found."}
+			return
+		end
 		if params[:status] && assignment.update(status: params[:status])
 			render json: assignment.to_json
 		elsif params[:comment] && assignment.update(comment: params[:comment])

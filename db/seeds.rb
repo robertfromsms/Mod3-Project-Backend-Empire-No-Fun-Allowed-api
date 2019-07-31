@@ -19,12 +19,12 @@ oo = Personnel.create(name: "OO8888", email: "OO8888@empire.org", pic_url: "http
 
 # Duty creation section
 
-duty1 = Duty.create(location: "Endor", description: "Basic survey", personnel_id: doom.id)
-duty2 = Duty.create(location: "Ars", description: "liberating natives", personnel_id: air.id)
-duty3 = Duty.create(location: "Flowers", description: "Brooke's Run", personnel_id: bird.id)
-duty4 = Duty.create(location: "Flat", description: "Heavy combat", personnel_id: doom.id)
-duty5 = Duty.create(location: "Hashy", description: "aight fuck it", personnel_id: air.id)
-duty6 = Duty.create(location: "Diamia", description: "What can I do?", personnel_id: bird.id)
+duty1 = Duty.create(location: "Endor", description: "Basic survey", personnel_id: doom.id, duty_status: "Inactive")
+duty2 = Duty.create(location: "Ars", description: "liberating natives", personnel_id: air.id, duty_status: "Inactive")
+duty3 = Duty.create(location: "Flowers", description: "Brooke's Run", personnel_id: bird.id, duty_status: "Inactive")
+duty4 = Duty.create(location: "Flat", description: "Heavy combat", personnel_id: doom.id, duty_status: "Inactive")
+duty5 = Duty.create(location: "Hashy", description: "aight fuck it", personnel_id: air.id, duty_status: "Inactive")
+duty6 = Duty.create(location: "Diamia", description: "What can I do?", personnel_id: bird.id, duty_status: "Inactive")
 
 # Assignment creation section
 

@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2019_07_29_144608) do
   create_table "duties", force: :cascade do |t|
     t.string "location"
     t.string "description"
+    t.string "duty_status"
     t.integer "personnel_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

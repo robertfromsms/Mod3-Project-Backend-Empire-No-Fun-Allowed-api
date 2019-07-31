@@ -41,7 +41,7 @@ class PersonnelsController < ApplicationController
 		trooper = Personnel.new(name: params[:name], email: params[:email], pic_url: params[:pic_url], role: "trooper", bio: params[:bio])
 
 		if trooper.save
-			render json: trooper.to_json
+			render json: trooper.to_json(include: [:duties])
 		else
 			render json: {error: "An error occured during registration."}
 		end
