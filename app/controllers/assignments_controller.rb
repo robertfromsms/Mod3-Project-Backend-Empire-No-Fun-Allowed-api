@@ -22,7 +22,7 @@ class AssignmentsController < ApplicationController
 			return
 		end
 
-		if params[:status] && assignment.update(status: params[:status])
+		if (params[:status] === true || params[:status] === false) && assignment.update(status: params[:status])
 			render json: assignment.to_json
 		elsif params[:comment]
 			oldComment = assignment.comment
@@ -30,6 +30,8 @@ class AssignmentsController < ApplicationController
 			if assignment.update(comment: updatedComment)
 				render json: assignment.to_json
 				return
+			else
+				render json: {error: "Something went wrong during the assignment update process."}
 			end
 		else
 			render json: {error: "Something went wrong during the assignment update process."}
