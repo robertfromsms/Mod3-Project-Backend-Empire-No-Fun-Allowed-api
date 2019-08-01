@@ -34,7 +34,7 @@ class PersonnelsController < ApplicationController
 		# end
 
 		# render json: troopers_with_less_than_3_duties.to_json
-		render json: troopers.to_json
+		render json: troopers.to_json(include: [:assignments, :duties])
 	end
 
 	def create
